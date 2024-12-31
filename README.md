@@ -208,7 +208,6 @@ This project is licensed under the MIT License.
 
 ---
 
-Feel free to customize the README with more details specific to your project. Let me know if you need any further adjustments!
 
 ---
 
@@ -216,4 +215,3 @@ Feel free to customize the README with more details specific to your project. Le
 - Replace `yourusername` with your actual GitHub username or the correct repository name for cloning.
 - Customize the license section or any other part of the README based on your specific needs.
 
-You can copy and paste this directly into your `README.md` file in the root directory of your project. Let me know if you need any more adjustments!
