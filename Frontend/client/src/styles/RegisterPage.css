@@ -1,0 +1,182 @@
+/* RegisterPage.css */
+
+/* Full Page Background with Gradient */
+.register-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #4e73df, #1d3557); /* Gradient from blue to dark blue */
+  flex-direction: row;
+  overflow: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Left Side with Welcome Message */
+.welcome-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+}
+
+.welcome-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: -webkit-linear-gradient(#ffffff, #4e73df);
+  -webkit-background-clip: text;
+  animation: glowing 2s infinite;
+}
+
+/* Glowing text effect for the heading */
+@keyframes glowing {
+  0% { text-shadow: 0 0 5px #ffffff, 0 0 10px #4e73df, 0 0 20px #4e73df, 0 0 30px #4e73df; }
+  50% { text-shadow: 0 0 10px #ffffff, 0 0 20px #4e73df, 0 0 30px #4e73df, 0 0 40px #4e73df; }
+  100% { text-shadow: 0 0 5px #ffffff, 0 0 10px #4e73df, 0 0 20px #4e73df, 0 0 30px #4e73df; }
+}
+
+/* Right Side Registration Form Container */
+.register-container {
+  width: 100%; /* Make it full-width at smaller screens */
+  max-width: 450px; /* Limit the width for larger screens */
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Form Field Styles */
+.register-form .ant-form-item-label label {
+  color: #344265;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Input Fields */
+.register-form input {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Button Styles */
+.btn-register {
+  width: 100%;
+  background-color: #4e73df;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #1d3557;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Link Styling */
+.login-link {
+  color: #4e73df;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #344265;
+  text-decoration: underline;
+}
+
+/* Spinner */
+.ant-spin-dot {
+  color: #4e73df; /* Spinner color matches the primary button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-page {
+    flex-direction: column;
+  }
+
+  .welcome-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .register-container {
+    width: 90%; /* Ensure form uses 90% width on small screens */
+    padding: 20px;
+  }
+
+  .register-form h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Password Strength Checker Styling */
+.password-strength-checker {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between; /* Display rules in a row */
+  flex-wrap: wrap; /* Allow wrapping if there's not enough space */
+}
+
+.password-strength-checker .rule {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #ff4d4f; /* Red for invalid */
+  width: 48%; /* To ensure they fit side by side */
+}
+
+.password-strength-checker .rule .rule-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.password-strength-checker .valid {
+  color: #52c41a; /* Green for valid */
+}
+
+.password-strength-checker .invalid {
+  color: #ff4d4f; /* Red for invalid */
+}
+
+.password-strength-checker .valid .rule-indicator {
+  background-color: #52c41a; /* Green dot for valid */
+}
+
+.password-strength-checker .invalid .rule-indicator {
+  background-color: #ff4d4f; /* Red dot for invalid */
+}
+

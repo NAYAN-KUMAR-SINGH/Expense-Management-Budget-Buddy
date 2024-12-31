@@ -1,0 +1,51 @@
+/* The backdrop overlay */
+.spinner-overlay {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: rgba(0, 0, 0, 0.3);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  z-index: 9999;
+                }
+                
+                /* Spinner container for centering */
+                .spinner-container {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                }
+                
+                /* Spinner animation */
+                .spinner {
+                  border: 8px solid rgba(255, 255, 255, 0.3); /* Light gray background */
+                  border-top: 8px solid #3498db; /* Blue color for the top */
+                  border-radius: 50%;
+                  width: 50px;
+                  height: 50px;
+                  animation: spin 1.5s linear infinite;
+                }
+                
+                /* Text under the spinner */
+                .loading-text {
+                  font-size: 18px;
+                  color: #fff;
+                  margin-top: 10px;
+                  font-weight: 600;
+                }
+                
+                /* Spinner animation */
+                @keyframes spin {
+                  0% {
+                    transform: rotate(0deg);
+                  }
+                  100% {
+                    transform: rotate(360deg);
+                  }
+                }
+                

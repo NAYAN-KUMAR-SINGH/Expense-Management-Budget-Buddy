@@ -1,0 +1,402 @@
+/* General page layout */
+body {
+                  font-family: 'Arial', sans-serif;
+                  background-color: #f4f7fa;
+                  margin: 0;
+                  padding: 0;
+                }
+                
+                .ant-modal-content {
+                  border-radius: 12px;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                }
+                
+                .ant-modal-header {
+                  background-color: #1890ff;
+                  color: white;
+                  font-weight: 600;
+                  border-radius: 12px 12px 0 0;
+                }
+                
+                .ant-modal-body {
+                  padding: 20px;
+                }
+                
+                .ant-table-thead th {
+                  background-color: #fafafa;
+                  color: #333;
+                  font-weight: bold;
+                  text-align: center;
+                }
+                
+                .ant-table-tbody td {
+                  text-align: center;
+                  vertical-align: middle;
+                }
+                
+                .ant-table-row:hover {
+                  background-color: #f1f1f1;
+                }
+                
+                .ant-table .ant-table-cell {
+                  border-bottom: 1px solid #e8e8e8;
+                }
+                
+                /* Filters section */
+                .filters {
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 30px 0;
+                }
+                
+                .filter-card {
+                  width: 30%;
+                  background: #ffffff;
+                  padding: 25px;
+                  border-radius: 10px;
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .filter-card:hover {
+                  transform: scale(1.05);
+                  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+                }
+                
+                .filter-card h6 {
+                  color: #333;
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+                
+                .switch-icons {
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                }
+                
+                .active-icon {
+                  color: #1890ff;
+                }
+                
+                .inactive-icon {
+                  color: #d9d9d9;
+                }
+                
+                /* Summary Section */
+                .summary {
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 30px 0;
+                }
+                
+                .summary-box {
+                  width: 32%;
+                  background: #ffffff;
+                  padding: 20px;
+                  border-radius: 10px;
+                  text-align: center;
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .summary-box:hover {
+                  transform: scale(1.05);
+                  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+                }
+                
+                .summary-box h5 {
+                  color: #333;
+                  font-size: 20px;
+                }
+                
+                .summary-box p {
+                  font-size: 18px;
+                  font-weight: 700;
+                  color: #1890ff;
+                }
+                
+                /* Goal Input Section */
+                .goal-input {
+                  margin: 20px 0;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                }
+                
+                .goal-input h6 {
+                  color: #333;
+                  font-weight: 600;
+                }
+                
+                .goal-input input {
+                  width: 250px;
+                  padding: 12px;
+                  border-radius: 8px;
+                  border: 1px solid #e8e8e8;
+                  font-size: 16px;
+                  outline: none;
+                  transition: border 0.3s ease;
+                }
+                
+                .goal-input input:focus {
+                  border: 1px solid #1890ff;
+                }
+                
+                /* Content Section */
+                .content {
+                  margin-top: 30px;
+                }
+                
+                /* Modal */
+                .transaction-modal .ant-modal-footer {
+                  display: none;
+                }
+                
+                .submit-btn {
+                  width: 100%;
+                  background-color: #1890ff;
+                  border: none;
+                  color: white;
+                  font-size: 16px;
+                  border-radius: 8px;
+                  padding: 12px;
+                  transition: background-color 0.3s ease;
+                }
+                
+                .submit-btn:hover {
+                  background-color: #40a9ff;
+                }
+                
+                /* Table and Charts Icons */
+                .switch-icons .anticon {
+                  font-size: 24px;
+                  margin: 0 12px;
+                  cursor: pointer;
+                  transition: transform 0.3s ease;
+                }
+                
+                .switch-icons .anticon:hover {
+                  transform: scale(1.1);
+                }
+                
+                /* Modal - Goal Exceeded */
+                .custom-notification-warning {
+                  background-color: #fffbe6;
+                  border-left: 4px solid #ffec3d;
+                  color: #b37feb;
+                }
+                
+                .custom-success {
+                  background-color: #e6f7ff;
+                  border-left: 4px solid #1890ff;
+                  color: #40a9ff;
+                }
+                
+                .custom-error {
+                  background-color: #fff2f0;
+                  border-left: 4px solid #ff4d4f;
+                  color: #ff7875;
+                }
+                
+                .goal-exceeded-modal p {
+                  font-size: 16px;
+                  color: #ff4d4f;
+                }
+                
+                .goal-exceeded-modal .ant-btn-primary {
+                  background-color: #ff4d4f;
+                  border-color: #ff4d4f;
+                }
+                
+                .goal-exceeded-modal .ant-btn-primary:hover {
+                  background-color: #e4393c;
+                }
+                
+                /* Responsive Design */
+                @media (max-width: 768px) {
+                  .filters,
+                  .summary {
+                    flex-direction: column;
+                  }
+                
+                  .filter-card,
+                  .summary-box {
+                    width: 100%;
+                    margin-bottom: 15px;
+                  }
+                
+                  .goal-input input {
+                    width: 100%;
+                  }
+                }
+                /* Center align table headers and data */
+.ant-table-thead th, .ant-table-tbody td {
+                  text-align: center;
+                }
+                
+                /* Centering the content inside the actions column */
+                .ant-table-tbody td.ant-table-cell-actions {
+                  text-align: center;
+                }
+                
+                /* Ensure the modal inputs and buttons are also centered */
+                /* .transaction-modal .ant-modal-content {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                } */
+                
+                .transaction-modal .ant-modal-footer {
+                  display: none;
+                }
+                
+                .submit-btn {
+                  width: 100%;
+                  background-color: #1890ff;
+                  border: none;
+                  color: white;
+                  font-size: 16px;
+                  border-radius: 5px;
+                  padding: 10px;
+                  transition: background-color 0.3s ease;
+                }
+                
+                .submit-btn:hover {
+                  background-color: #40a9ff;
+                }
+                /* Center align table headers and data */
+.ant-table-thead th, .ant-table-tbody td {
+  text-align: center !important;  /* Ensure the content inside headers and body cells is centered */
+}
+
+/* Specific centering for the Action column */
+.ant-table-tbody td.ant-table-cell-actions {
+  text-align: center !important; /* Ensures action buttons are centered */
+}
+
+/* Table width adjustment */
+.ant-table-thead th, .ant-table-tbody td {
+  padding: 12px; /* Add padding for better spacing */
+}
+
+/* Optional: Adjust for the entire table container to be centered */
+.ant-table-wrapper {
+  margin: 0 auto; /* Ensures the table container is centered on the page */
+}
+
+/* Optional: Style for the table header */
+.ant-table-thead th {
+  background-color: #f0f0f0; /* Light gray background */
+  font-weight: bold;
+}
+
+/* Ensure the modal content is also centered */
+/* .transaction-modal .ant-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* Custom Submit Button */
+.submit-btn {
+  width: 100%;
+  background-color: #1890ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #40a9ff;
+}
+
+                
+                
+/* Common Styles */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+  background-color: #1E3A8A !important;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Light Mode */
+body.light-mode .navbar {
+  background-color: #f8f9fa;
+}
+
+body.light-mode .navbar .navbar-brand {
+  color: #333;
+}
+
+body.light-mode .navbar .nav-link {
+  color: #333;
+}
+
+body.light-mode .navbar .nav-link:hover {
+  background-color: #ddd;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background-color: #1e3a8a; /* Deep blue background for dark mode */
+}
+
+body.dark-mode .navbar .navbar-brand {
+  color: white;
+}
+
+body.dark-mode .navbar .nav-link {
+  color: #f9f9f9;
+}
+
+body.dark-mode .navbar .nav-link:hover {
+  background-color: #333;
+}
+
+/* Avatar Styling */
+.navbar .avatar-img {
+  background-color: #60a5fa !important;
+  cursor: pointer;
+}
+
+/* Button styling for Dark Mode */
+.btn-dark-mode {
+  background-color: #333;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark-mode:hover {
+  background-color: #555;
+}
+
+/* Button styling */
+.btn-logout {
+  background-color: #ff4d4f;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #ff7875;
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: #60a5fa;
+}
+

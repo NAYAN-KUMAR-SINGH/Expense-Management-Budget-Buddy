@@ -1,0 +1,49 @@
+/* About Us Page Styles */
+.about-layout {
+                  background-color: #f4f7fc;
+                  padding: 50px 0;
+                }
+                
+                .about-content {
+                  padding: 30px;
+                }
+                
+                .about-container {
+                  max-width: 800px;
+                  margin: 0 auto;
+                  text-align: center;
+                }
+                
+                .about-title {
+                  font-size: 40px;
+                  color: #333;
+                }
+                
+                .about-subtitle {
+                  font-size: 30px;
+                  color: #007bff;
+                }
+                
+                .about-text {
+                  font-size: 16px;
+                  line-height: 1.6;
+                  color: #555;
+                }
+                
+                .about-button {
+                  margin-top: 20px;
+                  padding: 12px 24px;
+                  background-color: #007bff;
+                  border: none;
+                  color: white;
+                }
+                
+                .about-button a {
+                  color: white;
+                  text-decoration: none;
+                }
+                
+                .about-button:hover {
+                  background-color: #0056b3;
+                }
+                

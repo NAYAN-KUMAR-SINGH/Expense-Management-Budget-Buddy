@@ -1,0 +1,432 @@
+/* Header Styling */
+.navbar {
+  background-color: #1E3A8A !important; /* Deep blue background */
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  color: #f9f9f9 !important; /* White color for the brand */
+  font-weight: bold;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.brand-text {
+  color: #f9f9f9;
+  font-size: 1.8rem;
+}
+
+.brand-subtext {
+  font-size: 1.2rem;
+  color: #60a5fa; /* Light blue for subtext */
+  margin-left: 5px;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1e40af; /* Dark blue on hover */
+  background-color: #60a5fa; /* Light blue background on hover */
+  border-radius: 5px;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-toggler-icon {
+  background-color: #f9f9f9; /* White icon for toggle */
+}
+
+.nav-item .user-name {
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar .avatar-img {
+  background-color: #60a5fa !important; /* Light blue background for avatar */
+}
+
+/* Button styling */
+.btn-logout {
+  background-color: #ff4d4f; /* Red background for the logout button */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #ff7875; /* Light red on hover */
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(255, 72, 72, 0.6);
+}
+
+.btn-light.text-primary {
+  background-color: #3b82f6; /* Blue color for login button */
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.btn-light.text-primary:hover {
+  background-color: #60a5fa;
+  box-shadow: 0 2px 6px rgba(24, 144, 255, 0.4);
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .btn-logout {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Navigation link styles */
+.nav-link {
+  color: #f9f9f9;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #60a5fa;
+  border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+  background-color: #60a5fa;
+}
+/* Header Styling */
+.navbar {
+  background-color: #1E3A8A !important; /* Deep blue background */
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  color: #f9f9f9 !important; /* White color for the brand */
+  font-weight: bold;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.brand-text {
+  color: #f9f9f9;
+  font-size: 1.8rem;
+}
+
+.brand-subtext {
+  font-size: 1.2rem;
+  color: #60a5fa; /* Light blue for subtext */
+  margin-left: 5px;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: #f9f9f9;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-toggler-icon {
+  background-color: #f9f9f9; /* White icon for toggle */
+}
+
+.nav-item .user-name {
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar .avatar-img {
+  background-color: #60a5fa !important; /* Light blue background for avatar */
+  cursor: pointer;
+}
+
+/* Button styling */
+.btn-logout {
+  background-color: #ff4d4f; /* Red background for the logout button */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #ff7875; /* Light red on hover */
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(255, 72, 72, 0.6);
+}
+
+.btn-light.text-primary {
+  background-color: #3b82f6; /* Blue color for login button */
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.btn-light.text-primary:hover {
+  background-color: #60a5fa;
+  box-shadow: 0 2px 6px rgba(24, 144, 255, 0.4);
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .btn-logout {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+/* Adjusting upload button and modal styles */
+.ant-upload-select-picture-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ant-upload-select-picture-card:hover {
+  background-color: #e6f7ff;
+}
+
+.ant-modal-footer {
+  text-align: center;
+}
+
+/* Styling for Upload and Modal */
+.ant-upload-select-picture-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ant-upload-select-picture-card:hover {
+  background-color: #e6f7ff;
+}
+
+.ant-modal-footer {
+  text-align: center;
+}
+
+/* Styling for Upload and Modal */
+.ant-upload-select-picture-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ant-upload-select-picture-card:hover {
+  background-color: #e6f7ff;
+}
+
+.ant-modal-footer {
+  text-align: center;
+}
+/* Header Styles */
+.navbar {
+  background-color: #007bff; /* Primary color for the header */
+  padding: 15px 30px;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* White toggler icon */
+}
+
+.navbar-brand .brand-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-brand .brand-subtext {
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  color: white;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f0ad4e; /* Highlight color on hover */
+}
+
+.btn-logout {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-logout:hover {
+  background-color: #c82333;
+}
+
+.avatar-img {
+  border: 2px solid #fff; /* Circular border around the avatar */
+}
+
+.user-name {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Modal for Name Change */
+.ant-modal-title {
+  font-size: 18px;
+}
+
+.ant-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.ant-btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Header Styles */
+.navbar {
+  background-color: #007bff; /* Primary color for the header */
+  padding: 15px 30px;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* White toggler icon */
+}
+
+.navbar-brand .brand-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-brand .brand-subtext {
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  color: white;
+  margin-left: 20px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Highlight color on hover */
+  background-color: white; /* Background color when hovering */
+}
+
+.btn-about, .btn-contact {
+  color: #007bff; /* Text color blue */
+  background-color: transparent; /* Transparent background */
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-about:hover, .btn-contact:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: white; /* White text color on hover */
+}
+
+.btn-logout {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-logout:hover {
+  background-color: #c82333;
+}
+
+.avatar-img {
+  border: 2px solid #fff; /* Circular border around the avatar */
+}
+
+.user-name {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Modal for Name Change */
+.ant-modal-title {
+  font-size: 18px;
+}
+
+.ant-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.ant-btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}

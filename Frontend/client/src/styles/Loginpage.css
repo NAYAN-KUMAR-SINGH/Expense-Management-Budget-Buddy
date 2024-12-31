@@ -1,0 +1,157 @@
+/* Basic Full Page Layout */
+.login-page {
+  height: 100vh !important;
+  width: 100vw !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: linear-gradient(to right, #4e73df, #1d3557); /* Gradient background */
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Smooth zoom-in effect on hover */
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-form h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #2c3e50; /* Darker color for the header */
+  font-size: 2rem;
+}
+
+.login-form .ant-form-item-label label {
+  color: #344265 !important;
+  font-weight: 500;
+}
+
+/* Input Fields */
+.login-form input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.login-form input:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 10px rgba(78, 115, 223, 0.3);
+}
+
+/* Custom Styles for Invalid Input */
+.ant-form-item-has-error input {
+  border-color: #ff4d4f; /* Red border when the input is invalid */
+  box-shadow: 0 0 5px rgba(255, 77, 79, 0.5); /* Add a red shadow */
+}
+
+/* Login Button */
+.btn-login {
+  background-color: #4e73df; /* Blue background for login button */
+  color: white;
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Link Styles */
+.register-link {
+  color: #4e73df;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+.forgot-password-link {
+  color: #4e73df;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+/* Spinner Overlay */
+.ant-spin-dot {
+  color: #4e73df; /* Spinner color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    display: none; /* Hide image on smaller screens */
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px;
+  }
+}
+/* Custom Styles for Invalid Input */
+.ant-form-item-has-error input {
+  border-color: #ff4d4f; /* Red border when the input is invalid */
+  box-shadow: 0 0 5px rgba(255, 77, 79, 0.5); /* Add a red shadow */
+}
+
+.ant-form-item-explain {
+  color: #ff4d4f; /* Red error text */
+}
+/* Custom Styles for Invalid Input */
+.ant-form-item-has-error input {
+  border-color: #ff4d4f; /* Red border when the input is invalid */
+  box-shadow: 0 0 5px rgba(255, 77, 79, 0.5); /* Add a red shadow */
+}
+
+.ant-form-item-explain {
+  color: #ff4d4f; /* Red error text */
+}

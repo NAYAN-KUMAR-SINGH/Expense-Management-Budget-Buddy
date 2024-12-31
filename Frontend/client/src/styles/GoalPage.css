@@ -1,0 +1,279 @@
+/* GoalPage.css */
+
+/* Overall page styling */
+.goal-page-container {
+                  font-family: 'Poppins', sans-serif;
+                  background-color: #ffffff;
+                  color: #2c3e50;
+                  padding: 40px;
+                  border-radius: 15px;
+                  max-width: 900px;
+                  margin: 0 auto;
+                  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                  text-align: center;
+                }
+                
+                h1 {
+                  font-size: 2.5rem;
+                  color: #2980b9;
+                  margin-bottom: 20px;
+                  font-weight: 600;
+                }
+                
+                h2 {
+                  font-size: 1.75rem;
+                  color: #34495e;
+                  margin-bottom: 20px;
+                }
+                
+                h3 {
+                  font-size: 1.25rem;
+                  color: #27ae60;
+                }
+                
+                p {
+                  font-size: 1.1rem;
+                  color: #7f8c8d;
+                }
+                
+                /* Income Display */
+                .income-display {
+                  font-size: 1.5rem;
+                  color: #2980b9;
+                  font-weight: 600;
+                  margin-bottom: 20px;
+                }
+                
+                /* Create a New Goal */
+                .goal-card {
+                  background-color: #ffffff;
+                  padding: 20px;
+                  margin: 20px 0;
+                  border-radius: 10px;
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                  transition: background 0.3s ease-in-out;
+                  background-size: cover;
+                  background-position: center;
+                  color: white;
+                  position: relative;
+                  text-align: left;
+                }
+                
+                .goal-card-content {
+                  position: relative;
+                  z-index: 2;
+                }
+                
+                .goal-input {
+                  margin-bottom: 20px;
+                }
+                
+                .goal-input-field {
+                  width: 100%;
+                  padding: 12px;
+                  border: 1px solid #ddd;
+                  border-radius: 8px;
+                  font-size: 1rem;
+                  background-color: #f9f9f9;
+                  color: #2c3e50;
+                  margin-bottom: 10px;
+                }
+                
+                button {
+                  font-size: 1.2rem;
+                  padding: 12px 20px;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  transition: all 0.3s ease;
+                }
+                
+                button:hover {
+                  transform: scale(1.05);
+                }
+                
+                /* Button Styles */
+                .create-goal-btn {
+                  background-color: #2980b9;
+                  color: white;
+                  width: 100%;
+                }
+                
+                .add-to-goal-btn {
+                  background-color: #27ae60;
+                  color: white;
+                  width: 100%;
+                }
+                
+                .add-to-goal-btn:hover {
+                  background-color: #2ecc71;
+                }
+                
+                .create-goal-btn:hover {
+                  background-color: #3498db;
+                }
+                
+                /* Amount Input Field */
+                .amount-input {
+                  width: 100%;
+                  padding: 12px;
+                  border: 1px solid #ddd;
+                  border-radius: 8px;
+                  font-size: 1rem;
+                  background-color: #f9f9f9;
+                  color: #2c3e50;
+                  margin-top: 10px;
+                }
+                
+                /* Progress Bar */
+                .progress-container {
+                  background-color: #ddd;
+                  border-radius: 8px;
+                  margin-top: 10px;
+                  height: 10px;
+                }
+                
+                .progress-bar {
+                  background-color: #2ecc71;
+                  height: 100%;
+                  border-radius: 8px;
+                }
+                
+                /* Goal Achieved Message */
+                .goal-achieved {
+                  font-size: 1.2rem;
+                  color: #2ecc71;
+                  font-weight: bold;
+                  margin-top: 10px;
+                }
+                
+                /* Success Message */
+                .success-message {
+                  margin-top: 20px;
+                  background-color: #2ecc71;
+                  color: white;
+                  padding: 10px;
+                  border-radius: 5px;
+                }
+                
+                /* Back Button */
+                .back-button {
+                  background-color: #e74c3c;
+                  color: white;
+                  padding: 12px 20px;
+                  border-radius: 5px;
+                  font-size: 1rem;
+                  margin-top: 20px;
+                }
+                
+                .back-button:hover {
+                  background-color: #c0392b;
+                }
+                
+                /* Goal Summary Section */
+                .goal-summary {
+                  background-color: #fff;
+                  padding: 20px;
+                  margin-top: 30px;
+                  border-radius: 10px;
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                  text-align: center;
+                }
+                
+                /* Responsiveness */
+                @media (max-width: 768px) {
+                  .goal-page-container {
+                    padding: 20px;
+                  }
+                
+                  .goal-input-field {
+                    padding: 10px;
+                  }
+                
+                  button {
+                    padding: 10px;
+                  }
+                }
+                /* Modal Styles */
+.motivational-popup {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: rgba(0, 0, 0, 0.5);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  z-index: 1000;
+                }
+                
+                .popup-content {
+                  background-color: white;
+                  padding: 20px;
+                  border-radius: 10px;
+                  text-align: center;
+                  max-width: 400px;
+                  width: 80%;
+                }
+                
+                .popup-content h2 {
+                  margin-bottom: 10px;
+                  color: #333;
+                }
+                
+                .quote {
+                  font-size: 18px;
+                  font-weight: bold;
+                  color: #2d6a4f;
+                  margin-bottom: 20px;
+                }
+                
+                .close-popup-btn {
+                  background-color: #2d6a4f;
+                  color: white;
+                  border: none;
+                  padding: 10px 20px;
+                  border-radius: 5px;
+                  cursor: pointer;
+                }
+                
+                .close-popup-btn:hover {
+                  background-color: #1b4f33;
+                }
+                .history-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.history-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history-item {
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-history-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
